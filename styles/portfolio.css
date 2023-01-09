@@ -32,10 +32,7 @@ img {
  
   border-radius: 100px;
 }
-.col_3 {
-  
-  border-radius: 100px;
-}
+
 
 @media (min-width: 850px) {
   .grid_1-1 {
