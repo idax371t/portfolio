@@ -9,13 +9,13 @@ body {
 }
 
 header {
-  padding-top: 10rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
 }
 
 .headerbanner {
-  padding: 20px;
+  padding: 10px;
   display: flexbox;
   text-align: center;
 }
