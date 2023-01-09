@@ -9,6 +9,13 @@ main {
   margin-right: 5rem;
 }
 
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .col {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -17,16 +24,16 @@ main {
 }
 
 .col_1 {
-  background-color: #fddce482;
   border-radius: 100px;
+  
 }
 
 .col_2 {
-  background-color: #aee2dd79;
+ 
   border-radius: 100px;
 }
 .col_3 {
-  background-color: #f2e9f8c4;
+  
   border-radius: 100px;
 }
 
