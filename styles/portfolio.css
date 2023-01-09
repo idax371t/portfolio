@@ -1,20 +1,58 @@
-.grid_1-1 {
-  display: grid;
-  gap: 50px;
-  padding: 10px;
-}
-
 main {
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
 img {
-    width: 50%;
+ 
     display: block;
     margin-left: auto;
     margin-right: auto;
+    float: left;
+    width:  95%;
+    height: 70;
+    object-fit: cover;
 }
+
+h2 {
+    font-family: houschka-pro,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+p {
+font-family: houschka-pro,sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.grid_1-1 {
+  display: grid;
+  gap: 50px;
+  padding: 10px;
+}
+
 
 .col {
   margin-left: 5rem;

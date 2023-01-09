@@ -15,7 +15,8 @@ header {
 }
 
 .headerbanner {
-  padding: 10px;
+  padding: 30px;
+  padding-bottom: 70px;
   display: flexbox;
   text-align: center;
 }
