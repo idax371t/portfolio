@@ -11,7 +11,19 @@ img {
   width: 95%;
   height: 70;
   object-fit: cover;
+ transition: .5s ease;
 }
+  
+    
+    .img img:hover{
+    box-shadow: 0 0 0 10px #000000;
+    transition: .5s ease;
+    }
+  
+
+
+
+
 
 h2 {
   font-family: "Antic Didone", serif;
@@ -66,6 +78,9 @@ p {
   border-radius: 100px;
 }
 
+
+
+
 @media (min-width: 850px) {
   .grid_1-1 {
     display: grid;
@@ -89,19 +104,10 @@ header {
   text-align: center;
 }
 
-.p_style {
-  color: #c8b4b4;
-  font-weight: bold;
-  display: flexbox;
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
+
 
 .p_style2 {
-  color: #bb8a8a;
+  color: #6d4d36;
   font-weight: bold;
   display: inline;
   text-align: left;
@@ -111,23 +117,17 @@ header {
   font-size: 20px;
 }
 
+
+
+
 @media (min-width: 800px) {
   body {
     background: #ffffff;
   }
-  .p_style {
-    color: #bfa7a7;
-    font-weight: bold;
-    display: flexbox;
-    text-align: center;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
+  
 
   .p_style2 {
-    color: #987575;
+    color: #6d4d36;
     font-weight: bold;
     display: inline;
     text-align: left;
