@@ -8,7 +8,7 @@ body {
   background: #ffffff;
 }
 
-/* header {
+header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -21,16 +21,6 @@ body {
   text-align: center;
 }
 
-.p_style {
-  color: #c8b4b4;
-  font-weight: bold;
-  display: flexbox;
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
 
 .p_style2 {
   color: #bb8a8a;
@@ -41,25 +31,16 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 20px;
+  
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   body {
     background: #ffffff;
   }
-  .p_style {
-    color: #bfa7a7;
-    font-weight: bold;
-    display: flexbox;
-    text-align: center;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-
+  
   .p_style2 {
-    color: #987575;
+    color: #471B0B;
     font-weight: bold;
     display: inline;
     text-align: left;
@@ -67,5 +48,6 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 30px;
+    word-spacing: 20px;
   }
-} */
+}

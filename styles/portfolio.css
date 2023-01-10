@@ -37,12 +37,6 @@ p {
   font-style: normal;
 }
 
-.text {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
 
 .container {
   position: relative;
@@ -107,7 +101,7 @@ header {
 
 
 .p_style2 {
-  color: #6d4d36;
+  color: #471B0B;
   font-weight: bold;
   display: inline;
   text-align: left;
@@ -118,16 +112,13 @@ header {
 }
 
 
-
-
 @media (min-width: 800px) {
   body {
     background: #ffffff;
   }
   
-
   .p_style2 {
-    color: #6d4d36;
+    color: #471B0B;
     font-weight: bold;
     display: inline;
     text-align: left;
@@ -135,5 +126,18 @@ header {
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 30px;
+    word-spacing: 20px;
   }
 }
+body {
+  background-image: url(/Artboard\ 8-03.jpg);
+   /* The image used */
+
+   /* Full height */
+   height: 60%;
+ 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
