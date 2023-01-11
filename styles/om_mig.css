@@ -1,32 +1,21 @@
-html {
-  background: #da4453; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #89216b,
-    #da4453
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #89216b,
-    #da4453
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  mix-blend-mode: exclusion;
-  cursor: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.cursor {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 50%;
-  left: 50%;
-  margin: -24px 0 0 -24px;
-  border: 3px solid #f80759;
-  border-radius: 100px;
-  backface-visibility: hidden;
-  transition: transform 0.3s ease-out;
-}
-  .is-moving {
-    transform: scale(0.7);
+
+
+.mig {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
   }
