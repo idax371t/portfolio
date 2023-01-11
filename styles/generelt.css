@@ -17,10 +17,8 @@ header {
 .headerbanner {
   padding: 30px;
   padding-bottom: 70px;
-  display: flexbox;
   text-align: center;
 }
-
 
 .p_style2 {
   color: #bb8a8a;
@@ -31,16 +29,15 @@ header {
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 20px;
-  
 }
 
 @media (min-width: 600px) {
   body {
     background: #ffffff;
   }
-  
+
   .p_style2 {
-    color: #471B0B;
+    color: #471b0b;
     font-weight: bold;
     display: inline;
     text-align: left;
