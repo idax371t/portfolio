@@ -58,7 +58,10 @@ p {
   border-radius: 100px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 800px) {
+  body {
+    background: #ffffff;
+  }
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,26 +93,20 @@ header {
   letter-spacing: 2px;
   font-size: 20px;
 }
-
-@media (min-width: 800px) {
-  body {
-    background: #ffffff;
-  }
-
-  .p_style2 {
-    color: #471b0b;
-    font-weight: bold;
-    display: inline;
-    text-align: left;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 30px;
-    word-spacing: 20px;
-  }
+.p_style2 {
+  color: #471b0b;
+  font-weight: bold;
+  display: inline;
+  text-align: left;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 30px;
+  word-spacing: 20px;
 }
+
 body {
-  background-image: url(/Artboard\ 8-03.jpg);
+  background-image: url(/artboard8-03.jpg);
   /* The image used */
 
   /* Full height */
@@ -117,6 +114,6 @@ body {
 
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: no-repeat;
+
   background-size: cover;
 }

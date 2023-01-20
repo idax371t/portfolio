@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: blue;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: brown;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* display:block får de små striber til at være ovenpå hinanden */
+/* margin: 5px auto; betyder 5px på toppen og bunden og auto til venstre og højre */
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(9, 174, 174);
+}
+
+@media (max-width: 800px) {
+  .burger {
+    display: block;
+  }
+
+  /* aktiverer denne klasse med java. altså linjen nedenunder denne. den arbejder udfra nr. stregen i burgeren */
+
+  .burger.active.bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* transorm:translateY gør at to properties can stack on top of each other  */
+  .burger.active.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+.burger.active.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* det her sker når man trykker på burgermenuen og de forskellig overskrifter kommer ned. position:fixed gør, at menuen bliver 
+på skærmen når man scroller ned af siden. den bliver ikke oppe i toppen, den bliver på skærmen indtil du klikker på et af 
+linksne eller på menuen igen. 
+
+left:-100 skjuler den fra vores view, så man ikke alle overskrifterne. 
+
+flex-driection: column gør at alle linksne viser sig i en colonne form.
+
+width: 100% gør at menuen fylder hele skærmen
+
+text-align:center gør at teksten vises i midten
+
+transition 0.3s gør at menuen ikke kommer frem med det samme, men efter 0.3 sekunder*/
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0%;
+  flex-direction: column;
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* 16px på toppen og bunden */
+.nav-item {
+  margin: 16px 0;
+}
+
+/* nu skal nav-menuen aktiveres med java. højere oppe er left-100%. */
+.nav-menu.active {
+  left: 0;
+}
+/* 
+body,
+html {
+  height: 100%;
+}
+
+.baggrund {
+  background-image: url("/tema2-kopi.png");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */

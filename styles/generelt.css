@@ -8,14 +8,8 @@ body {
   background: #ffffff;
 }
 
-header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
 .headerbanner {
-  padding: 30px;
+  padding: 10px;
   padding-bottom: 70px;
   text-align: center;
 }
@@ -28,7 +22,7 @@ header {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 @media (min-width: 600px) {
@@ -44,7 +38,7 @@ header {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 10px;
     word-spacing: 20px;
   }
 }
