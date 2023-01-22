@@ -84,7 +84,7 @@ kan man ikke se boxen. */
   body {
     overflow-x: hidden;
   }
-
+/* ændre height her for at få boxen helt ned til bunden */
   .nav-links {
     position: absolute;
     right: 0px;
