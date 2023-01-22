@@ -1,22 +1,28 @@
-// nu skal vi have adgang til burger-classen. queryselectoren fanger classen. Bagefter får vi også adgang til nav-menuen
-const burger = document.querySelector(".burger");
-const navMenu = document.querySelector(".nav-menu");
+//nu laver vi en funktion. =() => betyder en anonym funktion.
+//vi tager fat i burgeren og navigation. Det der skal ske nu er, at når man trykker
+//på burgermenuen så vil vi have at nav-links skal have classen ".nav.active"
+//
 
-// Tilføjer en eventlistener til burgeren. når man klikker på burgermenuen så vil vi aktivere classen der får den til at blive et x,
-// og også den class der viser menuen foldet ud.
+//for at få fat på de individuelle overskrifter og få dem ind på nav-slide-boxen
+//tager man fat i navLinks.
 
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-// Nu vil vi gerne have at når man klikker på et af linksne i den udfoldede menu, så lukker hele menuen.
-// Det der sker nedenunder: for hver link tilføjer vi en eventlistener. det er et clickevent. Vi vil nu fjerne "active"classen
-//fra både burger og nav-menu så vi bruger classlist.remove("active")
+  //toggle nav
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    burger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+      }
+    });
+  });
+};
+
+navSlide();

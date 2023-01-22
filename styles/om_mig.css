@@ -2,20 +2,3 @@
   margin: 0;
   padding: 0;
 }
-
-
-
-.mig {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-  }
-
-  p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
-  }
