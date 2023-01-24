@@ -3,3 +3,129 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+/* igang med at lave grid nu. rows er vertikale og colonner er horisontale.
+ */
+.box1 {
+  grid-area: box1;
+
+}
+
+/* justify-content
+align-items */
+
+.box2 {
+  background-color:blue;
+  grid-area: box2;
+}
+
+.box3 {
+  background-color:brown;
+  grid-area: box3;
+
+}
+.box4 {
+  background-color:rgb(6, 42, 42);
+  grid-area: box4;
+
+}
+
+/* justify-content
+align-items */
+
+.box5 {
+  background-color:blue;
+  grid-area: box5;
+}
+
+.box6 {
+  background-color:brown;
+  grid-area: box6;
+
+}
+
+h1 {
+    font-family: 'Aboreto', sans-serif;
+    font-weight: lighter;
+  
+}
+
+p{
+font-family: "Poppins", sans-serif;
+}
+
+/* display grid for ikke kolonnerne til at gøre noget nyt, de vil bare være staplet ovenpå hinanden.
+ man bruger "fr" som betyder "fractions" istedet for at skrive 300px 300px f.eks. udfra grid-template-columns
+ fr tager alt det tilgængelige plads i kolonnen*/
+.div1{
+  display: grid;
+  margin-top: 10%;
+  height: 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "box1 box2"
+  "box1 box3";
+}
+
+.div2{
+  display: grid;
+  margin-top: 10%;
+  height: 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "box5 box4"
+  "box6 box4";
+}
+
+/* her kunne grid-column-start 1 og grid-column-end 3 også bruges. Men det kan forkortes
+ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af boxen til den sidste*/
+/* sådan her kan man gøre det, men der er en nemmere måde-> se nedenunder 
+
+.box3 {
+  grid-column:1/3;
+} */
+
+/* .box2 {
+  grid-row: 1/3;
+}  */
+
+/* man kan lave en grid-templaet-areas som fungerer som en visuel representation af
+ ens grid. man definerer boxene og giver dem et navn som er gjort længere oppe ved box-classerne
+ nu kan man altså lave grid-layoutet ved at skrive navnene ind. Så første ord representerer den første kolonne.
+ første ord refererer til første kolonne. tredje ord referer til første række osv. 
+ man kan skrive et punktum hvis man vil have et tomt område.  */
+
+ @media (max-width: 900px) {
+  body {
+    background: #861717;
+  }
+  
+  .div1 {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box1 box1"
+    "box2 box2"
+    "box3 box3";
+  }
+  
+  .div2 {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box4 box4"
+    "box5 box5"
+    "box6 box6";
+  }
+  }
+
+
+ 
