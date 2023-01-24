@@ -34,7 +34,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 6vh;
   background-color: rgb(57, 158, 235);
   font-family: "Poppins", sans-serif;
 }
