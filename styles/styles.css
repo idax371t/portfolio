@@ -5,25 +5,9 @@
   box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h1 {
+  font-family: "Playfair Display", serif;
+}
 
 .baggrund {
   /* Set rules to fill background */
@@ -55,7 +39,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 6vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(246, 237, 232);
   font-family: "Poppins", sans-serif;
 }
 

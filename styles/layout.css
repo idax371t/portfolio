@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(246, 237, 232);
+}
 /* igang med at lave grid nu. rows er vertikale og colonner er horisontale.
  */
 .box1 {
   grid-area: box1;
-  
+
   margin-bottom: 50px;
 }
 
@@ -17,18 +20,15 @@ align-items */
 
 .box2 {
   grid-area: box2;
-  
 }
 
 .box3 {
   grid-area: box3;
   margin-bottom: 30%;
   margin-top: 0;
-  
 }
 .box4 {
   grid-area: box4;
- 
 }
 
 /* justify-content
@@ -42,7 +42,6 @@ align-items */
 
 .box6 {
   grid-area: box6;
-  
 }
 
 h1 {
@@ -110,8 +109,8 @@ ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af
   }
 
   .div1 {
-    display: grid;
-    height: 500px;
+    display: block;
+    height: 90%;
     column-gap: 40px;
     row-gap: 40px;
     grid-template-columns: 1fr 1fr;
@@ -123,8 +122,8 @@ ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af
   }
 
   .div2 {
-    display: grid;
-    height: 500px;
+    display: block;
+    height: 90%;
     row-gap: 40px;
     column-gap: 40px;
     grid-row-gap: 60%;
