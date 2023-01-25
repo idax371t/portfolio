@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: rgb(246, 237, 232);
+}
+
 body {
   background-color: rgb(246, 237, 232);
 }
@@ -43,9 +47,24 @@ align-items */
 .box6 {
   grid-area: box6;
 }
+.overskrift1 {
+  color: chocolate;
+  font-size: 80px;
+  font-family: "fino", serif;
+  margin-right: 55%;
+  margin-bottom: 0;
+}
+
+.overskrift2 {
+  color: chocolate;
+  font-size: 80px;
+  font-family: "fino", serif;
+  margin-left: 15%;
+  margin-top: 0%;
+}
 
 h1 {
-  font-family: "Aboreto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: lighter;
   font-size: 19px;
   margin-bottom: 20px;

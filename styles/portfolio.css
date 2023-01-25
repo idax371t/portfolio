@@ -52,17 +52,14 @@ img {
 
 @media (min-width: 900px) {
   body {
-    background: #ffffff;
+    background-color: rgb(246, 237, 232);
   }
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
-   
   }
   .col_3 {
     grid-column: 1/3;
-   
   }
-
 }
