@@ -46,6 +46,10 @@ img {
   border-radius: 100px;
 }
 
+.col_3 {
+  border-radius: 100px;
+}
+
 @media (min-width: 900px) {
   body {
     background: #ffffff;
@@ -58,6 +62,7 @@ img {
   }
   .col_3 {
     grid-column: 1/3;
+   
   }
 
 }

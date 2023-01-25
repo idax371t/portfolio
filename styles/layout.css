@@ -8,7 +8,7 @@
  */
 .box1 {
   grid-area: box1;
-  background-color: #ffffff;
+  
   margin-bottom: 50px;
 }
 
@@ -17,18 +17,18 @@ align-items */
 
 .box2 {
   grid-area: box2;
-  background-color: rgb(255, 255, 255);
+  
 }
 
 .box3 {
   grid-area: box3;
-  background-color: rgb(255, 255, 255);
   margin-bottom: 30%;
   margin-top: 0;
+  
 }
 .box4 {
   grid-area: box4;
-  background-color: rgb(255, 255, 255);
+ 
 }
 
 /* justify-content
@@ -36,14 +36,13 @@ align-items */
 
 .box5 {
   grid-area: box5;
-  background-color: rgb(255, 255, 255);
   width: 60%;
   margin-bottom: 40px;
 }
 
 .box6 {
   grid-area: box6;
-  background-color: rgb(255, 255, 255);
+  
 }
 
 h1 {
@@ -77,6 +76,7 @@ p {
 .div2 {
   display: grid;
   margin-top: 30%;
+  margin-bottom: 60%;
   column-gap: 40px;
   height: 300px;
   grid-template-columns: 1fr 1fr;
