@@ -4,86 +4,86 @@
   box-sizing: border-box;
 }
 
-
-
 /* igang med at lave grid nu. rows er vertikale og colonner er horisontale.
  */
 .box1 {
   grid-area: box1;
-
+  background-color: #ffffff;
+  margin-bottom: 50px;
 }
 
 /* justify-content
 align-items */
 
 .box2 {
-  
   grid-area: box2;
+  background-color: rgb(255, 255, 255);
 }
 
 .box3 {
-  
   grid-area: box3;
-
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30%;
+  margin-top: 0;
 }
 .box4 {
-  
   grid-area: box4;
- 
-
+  background-color: rgb(255, 255, 255);
 }
 
 /* justify-content
 align-items */
 
 .box5 {
-  
   grid-area: box5;
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  margin-bottom: 40px;
 }
 
 .box6 {
- 
   grid-area: box6;
-
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-    font-family: 'Aboreto', sans-serif;
-    font-weight: lighter;
-  
+  font-family: "Aboreto", sans-serif;
+  font-weight: lighter;
+  font-size: 19px;
+  margin-bottom: 20px;
 }
 
-p{
-font-family: "Poppins", sans-serif;
-
+p {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 15px;
 }
 
 /* display grid for ikke kolonnerne til at gøre noget nyt, de vil bare være staplet ovenpå hinanden.
  man bruger "fr" som betyder "fractions" istedet for at skrive 300px 300px f.eks. udfra grid-template-columns
  fr tager alt det tilgængelige plads i kolonnen*/
-.div1{
+.div1 {
   display: grid;
-  margin-top: 10%;
+  height: 300px;
+  margin-top: 8%;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3";
+}
+
+.div2 {
+  display: grid;
+  margin-top: 30%;
+  column-gap: 40px;
   height: 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "box1 box2"
-  "box1 box3";
-  grid-gap: 7%;
-}
-
-.div2{
-  display: grid;
-  margin-top: 40%;
-  margin-top: 10%;
-  height: 300px; 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "box5 box4"
-  "box6 box4";
-  grid-gap: 7%;
+  grid-template-areas:
+    "box5 box4"
+    "box6 .";
 }
 
 /* her kunne grid-column-start 1 og grid-column-end 3 også bruges. Men det kan forkortes
@@ -104,36 +104,35 @@ ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af
  første ord refererer til første kolonne. tredje ord referer til første række osv. 
  man kan skrive et punktum hvis man vil have et tomt område.  */
 
- @media (max-width: 900px) {
+@media (max-width: 900px) {
   body {
     background: #861717;
   }
-  
+
   .div1 {
     display: grid;
     height: 500px;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "box1 box1"
-    "box2 box2"
-    "box3 box3";
- 
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+      "box3 box3";
   }
-  
+
   .div2 {
     display: grid;
     height: 500px;
-   
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "box4 box4"
-    "box5 box5"
-    "box6 box6";
-    
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-row-gap: 60%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "box4 box4"
+      "box5 box5"
+      "box6 box6";
   }
-  }
-
-
- 
+}
