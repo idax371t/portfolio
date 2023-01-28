@@ -10,6 +10,16 @@ img {
   float: left;
   width: 95%;
   object-fit: cover;
+  position: relative;
+}
+
+.img1 {
+  position: relative;
+}
+
+.img1 img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -18,11 +28,30 @@ img {
   color: white;
 }
 
-.centered {
+.link {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  padding: 14px 28px;
+  cursor: pointer;
   position: absolute;
-  top: 90%;
-  left: 50%;
+  top: 0;
+  margin-top: 40%;
+  left: 47%;
   transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #f4255c;
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
+  text-decoration: underline;
+  transition: box-shadow 0.3s;
+}
+
+.link:hover {
+  background-color: #f4255c;
+  color: white;
+  text-decoration: underline;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .grid_1-1 {
@@ -48,6 +77,7 @@ img {
 
 .col_3 {
   border-radius: 100px;
+  margin-left: 25%;
 }
 
 @media (min-width: 900px) {

@@ -10,7 +10,7 @@ html {
 }
 h1 {
   text-align: center;
-  color: chocolate;
+  color: #3580f9;
   font-size: 80px;
   margin-top: 4%;
   font-family: "fino", serif;
@@ -53,7 +53,7 @@ nav {
 }
 
 .logo {
-  margin-right: 35%;
+  margin-right: 45%;
 }
 
 .nav-links {
@@ -67,7 +67,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(46, 14, 223);
+  color: #f4255c;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: 14px;
@@ -81,7 +81,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(48, 14, 182);
+  background-color: #3580f9;
   margin: 5px;
 }
 
