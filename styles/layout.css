@@ -55,27 +55,6 @@ align-items */
   margin-bottom: 0;
 }
 
-.overskrift2 {
-  color: chocolate;
-  font-size: 80px;
-  font-family: "fino", serif;
-  margin-left: 15%;
-  margin-top: 0%;
-}
-
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  font-size: 19px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  text-align: justify;
-  font-size: 15px;
-}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
