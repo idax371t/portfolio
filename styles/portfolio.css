@@ -21,11 +21,6 @@ img {
   height: auto;
 }
 
-img:hover {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 18px;
-}
-
 .container {
   position: relative;
   text-align: center;
