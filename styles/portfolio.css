@@ -10,31 +10,20 @@ img {
   float: left;
   width: 95%;
   object-fit: cover;
-}
-
-.img1 {
   position: relative;
 }
 
-.img1 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
+/* .container {
   position: relative;
   text-align: center;
   color: white;
-}
+} */
 
 .link {
   border: 1px solid black;
   background-color: rgb(255, 255, 255);
-
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  margin-top: 40%;
+  position: relative;
   left: 47%;
   transform: translate(-50%, -50%);
   font-family: "Poppins", sans-serif;

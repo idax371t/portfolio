@@ -116,8 +116,6 @@ nav {
   margin: 5px;
 }
 
-.knap {
-}
 
 /* 0px på right så de bliver låst fast i højre side. flex-direction column får 
 linksne til at være i en kolonneform, og derefter align-items center. 
