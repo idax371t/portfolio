@@ -13,39 +13,6 @@ body {
 }
 /* igang med at lave grid nu. rows er vertikale og colonner er horisontale.
  */
-.box1 {
-  grid-area: box1;
-  margin-bottom: 50px;
-}
-
-/* justify-content
-align-items */
-
-.box2 {
-  grid-area: box2;
-}
-
-.box3 {
-  grid-area: box3;
-  margin-bottom: 30%;
-  margin-top: 0;
-}
-.box4 {
-  grid-area: box4;
-}
-
-/* justify-content
-align-items */
-
-.box5 {
-  grid-area: box5;
-  width: 60%;
-  margin-bottom: 40px;
-}
-
-.box6 {
-  grid-area: box6;
-}
 .overskrift1 {
   color: chocolate;
   font-size: 80px;
@@ -145,11 +112,60 @@ align-items */
     opacity: 1;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+
+.row .left {
+  overflow: hidden;
+}
+
+.row .right {
+  display: flex;
+  align-items: center;
+}
+
+.row .right .content {
+  padding-left: 20px;
+}
+
+.row .right .content p {
+}
+
+@media (max-width: 990px) {
+  .row .right .content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
 
 /* display grid for ikke kolonnerne til at gøre noget nyt, de vil bare være staplet ovenpå hinanden.
  man bruger "fr" som betyder "fractions" istedet for at skrive 300px 300px f.eks. udfra grid-template-columns
  fr tager alt det tilgængelige plads i kolonnen*/
-.div1 {
+/* .div1 {
   display: grid;
   height: 300px;
   margin-top: 8%;
@@ -172,7 +188,7 @@ align-items */
   grid-template-areas:
     "box5 box4"
     "box6 .";
-}
+} */
 
 /* her kunne grid-column-start 1 og grid-column-end 3 også bruges. Men det kan forkortes
 ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af boxen til den sidste*/
@@ -192,7 +208,7 @@ ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af
  første ord refererer til første kolonne. tredje ord referer til første række osv. 
  man kan skrive et punktum hvis man vil have et tomt område.  */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   body {
     background: #f8bfbf;
   }
@@ -223,4 +239,4 @@ ved at bruge grid-column:1/3. man tæller altså kolonnerne ved første streg af
       "box5 box5"
       "box6 box6";
   }
-}
+} */
