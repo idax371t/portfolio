@@ -8,9 +8,6 @@ html {
   background-color: rgb(246, 237, 232);
 }
 
-body {
-  background-color: rgb(246, 237, 232);
-}
 /* igang med at lave grid nu. rows er vertikale og colonner er horisontale.
  */
 .overskrift1 {
@@ -111,11 +108,6 @@ body {
   to {
     opacity: 1;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
