@@ -4,12 +4,50 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   width: 100%;
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
+
+.socials {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.fa {
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3483F6;
+  color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+  background: #3483F6;
+  color: white;
+}
+.fa-instagram {
+  background: #3483F6;
+  color: white;
+}
+
 
 .row {
   width: 80%;
@@ -31,15 +69,17 @@ body {
 
 .row .right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .row .right .content {
   padding-left: 20px;
+  border-style: ridge;
+  border-width: 10px;
+  padding: 20px;
+  border-color: #e85d5d;
 }
 
-.row .right .content p {
-}
 
 @media (max-width: 990px) {
   .row .right .content {
@@ -53,3 +93,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+

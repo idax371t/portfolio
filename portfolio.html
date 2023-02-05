@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/portfolio.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="index.html" />
     <link rel="stylesheet" href="portfolio.html" />
     <link rel="stylesheet" href="om_mig.html" />
@@ -24,6 +23,7 @@
     <title>Portfolio</title>
     </head>
     <body>
+      <header>
       <nav>
         <div class="logo">
           <img src="/img/logo.svg" alt=""style="width: 20%" />
@@ -39,6 +39,7 @@
           <div class="line3"></div>
         </div>
       </nav>
+    </header>
       <h1>PROJEKTER</h1>
   <main>
      <section class="grid_1-1">
@@ -64,7 +65,9 @@
 
 
             <div class="col_2">
-              <img src="img/tema4.png" alt="tema 3">
+              <div class="img1">
+              <img src="img/tema4.png" alt="tema 3"></div>
+              <div class="button_wrapper">
               <a href="/tema4.html"> <button class="link">se mere</button></a>
               </div>
             </div>
@@ -72,20 +75,29 @@
 
             
               <div class="col_1">
-                <img src="img/tema5.png" alt="tema 3">
+                <div class="img1">
+                <img src="img/tema5.png" alt="tema 3"> </div>
+                <div class="button_wrapper">
                 <a href="/tema5.html"> <button class="link">se mere</button></a>
                 </div>
+              </div>
 
-
-             <div class="col_3">
-                <div class="img2">
+ 
+             <div class="col_2">
+                <div class="img1">
               <img src="img/tema6.png" alt="tema 3" ></div>
-              <a href="/tema5.html"> <button class="link">se mere</button></a>
+              <div class="button_wrapper">
+              <a href="/tema6.html"> <button class="link">se mere</button></a>
                </div>
+             </div>
+             
         
             
-     </section>
+    </section>
       </main>
       <script src="script.js"></script>
+      <footer>
+        <p>portfolio 2023</p>
+      </footer>
   </body>
 </html>

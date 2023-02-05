@@ -9,6 +9,11 @@
   display: inline-block;
 }
 
+footer p {
+  text-align: center;
+  color: #f4255c;
+}
+
 html {
   background-color: rgb(246, 237, 232);
 }
@@ -16,7 +21,8 @@ h1 {
   text-align: center;
   color: #1a4da0;
   font-size: 80px;
-  margin-top: 4%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-family: "fino", serif;
   font-weight: 400;
   font-style: normal;
@@ -61,6 +67,7 @@ p {
   left: 0;
 }
 
+
 @media screen and (max-width: 1024px) {
   /* Specific to this particular image */
   .baggrund {
@@ -68,6 +75,10 @@ p {
     margin-left: -512px; /* 50% */
     z-index: 0;
   }
+}
+
+.baggrundimg {
+  width: 100%;
 }
 
 /* display flex gør at punkterne kommer ved siden af hinanden. justify-content space around giver 
@@ -84,7 +95,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 80%;
   z-index: 1;
 }
 
@@ -116,7 +127,7 @@ linksne til at være i en kolonneform, og derefter align-items center.
 for at fjerne den store navigation-box bruger man transform:translateX(100%)
 som flytter hele boxen væk fra skærmen. Ved at bruge body overflow-x hidden
 kan man ikke se boxen. */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 828px) {
   body {
     overflow-x: hidden;
   }
