@@ -74,8 +74,8 @@ html {
 .dots {
   display: inline-block;
   position: relative;
-  margin-left: 40%;
-  margin-bottom: 10%;
+  margin-left: 44%;
+  margin-bottom: 5%;
 }
 
 /* The dots/bullets/indicators */
@@ -83,7 +83,7 @@ html {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin-top: 45%;
+  margin-top: 20%;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -130,15 +130,11 @@ body {
 }
 
 .row .right {
-  display: flex;
   align-items: center;
 }
 
 .row .right .content {
   padding-left: 20px;
-}
-
-.row .right .content p {
 }
 
 @media (max-width: 990px) {
