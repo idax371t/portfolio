@@ -19,11 +19,6 @@ img {
   position: relative;
 }
 
-/* .container {
-  position: relative;
-  text-align: center;
-  color: white;
-} */
 .img1 {
   grid-row: 1;
   grid-column: 1;
@@ -87,6 +82,30 @@ img {
   display: grid;
 }
 
+@media (max-width: 768px) {
+  .link {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #f4255c;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    text-decoration: underline;
+    transition: box-shadow 0.3s;
+  }
+
+  .button_wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    justify-self: center;
+    align-self: center;
+    padding-top: 8rem;
+    padding-right: 3rem;
+  }
+}
 @media (min-width: 900px) {
   body {
     background-color: rgb(246, 237, 232);
