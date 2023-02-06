@@ -65,6 +65,13 @@ p {
   left: 0;
 }
 
+.intro {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media screen and (max-width: 1024px) {
   .baggrund {
     left: 50%;
